@@ -31,5 +31,12 @@ analysis/
 ## Tools / Assumptions
 - SQL dialect: BigQuery-like (standard SQL)
 - DBT-inspired modeling structure (but manual)
+  - a models folder
+  - separate SQL files for each model
+  - single-purpose, layered logic
+  - clean grain definitions
+  - CTEs that mirror DBT’s stg_, int_, dim_, and fact_ thinking
+  - no shared state
+  - no monolithic queries
 - Synthetic dataset designed for reasoning, not statistical significance
 
